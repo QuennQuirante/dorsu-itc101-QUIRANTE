@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String [] args){
+
+    int number = 0;
+    String intputString;
+    Scanner sc = new Scanner (System.in);
+    
+   try {
+        System.out.print("Enter number to determine wether odd or even:");
+        intputString = sc.next();
+        number=Integer.parseInt(intputString);
+        
+        
+   }
+    
+    
+    catch(NumberFormatException e){
+    System.out.println("Not a number\n");
+    }
+    
+    if(number%2==0){
+        System.out.println(number+ "is an even number");
+    }
+   else 
+   System.out.println(number+ "is an odd number");
+    }
+}
+    
